@@ -86,7 +86,9 @@ if [[ $KEEP_YEARLY =~ $num ]] ; then
    KEEP+=("--keep-yearly $KEEP_YEARLY")
 fi
 
-CMD=$(printf " %s" "${KEEP[@]}"); CMD=${CMD:1}; CMD="restic forget $CMD"
+if (( ${#KEEP[@]} > 0 )); then
+    CMD=$(printf " %s" "${KEEP[@]}"); CMD=${CMD:1}; CMD="restic forget $CMD"
 
-echo "$CMD"
-eval "$CMD"
+    echo "$CMD"
+    eval "$CMD"
+fi
