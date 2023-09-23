@@ -1,0 +1,178 @@
+# homedir-excludes
+#
+# A list of files to exclude when backing up *nix home directories.
+
+.anydesk
+.android
+.cert/nm-openvpn/ProtonVPN-*
+.cache
+
+.config/Bitwarden
+.config/Joplin
+.config/Mullvad VPN
+.config/balena-etcher
+.config/cef_user_data/WidevineCdm
+.config/gcloud/logs
+.config/gtk-*
+.config/session/krusader_*
+.config/spotify
+.config/libreoffice/4/cache
+.config/joplin-desktop/log.txt
+.config/BraveSoftware
+.config/chromium
+
+# Electron Apps
+.config/**/blob_storage
+.config/**/Application Cache
+.config/**/Cache
+.config/**/CachedData
+.config/**/Code Cache
+.config/**/GPUCache
+.config/**/Service Worker/CacheStorage
+.var/app/**/blob_storage
+.var/app/**/Application Cache
+.var/app/**/Cache
+.var/app/**/CachedData
+.var/app/**/Code Cache
+.var/app/**/GPUCache
+.var/app/**/Service Worker/CacheStorage
+
+.docker
+.java
+
+.minikube
+.kube/cache
+.kube/http-cache
+
+.local/bin
+.local/lib/python*
+.local/share/TelegramDesktop
+.local/share/ghostwriter
+.local/share/icons/hicolor
+.local/share/protonmail/bridge-*
+.local/share/strawberry
+.local/share/Steam
+.local/share/gvfs-metadata
+.local/share/Trash
+.local/share/RecentDocuments
+.local/share/klipper
+.local/share/torbrowser
+.local/share/baloo
+.local/share/digikam
+.local/share/krita
+
+# indexer
+.local/share/baloo
+.local/share/zeitgeist
+.local/share/akonadi
+
+# Firefox
+.mozilla/firefox/Crash Reports
+.mozilla/firefox/*/datareporting
+.mozilla/firefox/*/storage/default
+.mozilla/firefox/*/weave/logs
+.mozilla/firefox/*/Cache
+# in case Fx crashes dumps will be stored in this
+.mozilla/firefox/*/minidumps
+# session-specific 
+.mozilla/firefox/*/.parentlock
+# phishing database, recreated
+.mozilla/firefox/*/urlclassifier3.sqlite
+# blacklisted extensions
+.mozilla/firefox/*/blocklist.xml
+# extension database, recreated on startup
+.mozilla/firefox/*/extensions.sqlite
+.mozilla/firefox/*/extensions.sqlite-journal
+.mozilla/firefox/*/extensions.rdf
+.mozilla/firefox/*/extensions.ini
+.mozilla/firefox/*/extensions.cache
+# cached UI data, recreated
+.mozilla/firefox/*/XUL.mfasl
+.mozilla/firefox/*/XPC.mfasl
+.mozilla/firefox/*/xpti.dat
+.mozilla/firefox/*/compreg.dat
+# cached plugin data, recreated
+.mozilla/firefox/*/pluginreg.dat
+
+.oh-my-zsh
+
+Sites/**/vendor
+Sites/**/node_modules
+
+bin/google-cloud-sdk
+
+go/pkg
+go/bin
+
+# VirtualBox
+.config/VirtualBox/VBoxSVC.log*
+.config/VirtualBox/VBoxGuestAdditions_*
+VirtualBox VMs
+
+## history files
+.python_history
+.bash_history
+.zsh_history
+.mysql_history
+
+# Cached packages lists:
+.aptitude
+
+# Node Package Manager cache
+.npm
+
+# Node Version Manager
+.nvm
+
+# Contains mounted file systems:
+.gvfs
+.local/share/gvfs-metadata
+
+# Recently used files
+.local/share/RecentDocuments
+.recently-used
+.recently-used.xbel
+recently-used.xbel
+.thumbnails
+.thumb
+Thumbs.db
+.DS_Store
+.localised
+.CFUserTextEncoding
+.zcompdump*
+.wget-hsts
+
+.thunderbird/*/Cache
+
+# GnuPG
+.gnupg/rnd
+.gnupg/random_seed
+.gnupg/.#*
+.gnupg/*.lock
+.gnupg/gpg-agent-info-*
+
+# Snap
+.config/*/Cache
+/snap/chromium
+
+.dropbox
+.dropbox-dist
+Dropbox/.dropbox.cache
+
+# Vim
+.vim/bundle/*
+.viminfo
+
+# VS Code
+.vscode-oss
+.vscode
+.config/Code - OSS
+.config/Code
+
+# Session-specific
+.Xauthority
+.ICEauthority
+.gksu.lock
+.pulse
+.pulse-cookie
+.esd_auth
